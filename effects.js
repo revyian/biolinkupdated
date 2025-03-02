@@ -61,7 +61,7 @@ typeWriter();
 
 document.addEventListener("DOMContentLoaded", function () {
 const elements = document.querySelectorAll('.typewriter');
-const texts = ["email me: i@clu.ng", "i love kira", "#999"];
+const texts = ["haram income", "high and rich", ":3"];
 const typingSpeed = 100;
 const pauseDuration = 1000;
 let currentIndex = 0;
