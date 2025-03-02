@@ -1,3 +1,14 @@
+function copyAddress(id) {
+    const svgElement = document.getElementById(id + 'Input');
+    const title = svgElement.getAttribute('title');
+
+    navigator.clipboard.writeText(title).then(() => {
+        alert('copied the discord to clipboard: @' + title);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+
 function removeOverlay() {
     var overlay = document.getElementById('overlay');
     var userpage = document.getElementById('user-page');
@@ -13,7 +24,6 @@ function removeOverlay() {
     }, 2000);
 }
 
-
 function toggleMusic() {
     var mutebtn = document.getElementById("mutetext");
         if (mutebtn.innerHTML == "off") mutebtn.innerHTML = "on";
@@ -25,7 +35,7 @@ function toggleMusic() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const prefix = "⠐ ";
-    const titleText = "Revy";
+    const titleText = "decal";
     let index = 0;
     let isDeleting = false;
 
@@ -51,7 +61,7 @@ typeWriter();
 
 document.addEventListener("DOMContentLoaded", function () {
 const elements = document.querySelectorAll('.typewriter');
-const texts = ["most feared", "haram income", "richest."];
+const texts = ["email me: i@clu.ng", "i love kira", "#999"];
 const typingSpeed = 100;
 const pauseDuration = 1000;
 let currentIndex = 0;
