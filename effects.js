@@ -51,7 +51,7 @@ typeWriter();
 
 document.addEventListener("DOMContentLoaded", function () {
 const elements = document.querySelectorAll('.typewriter');
-const texts = ["#1", "violence", "1337."];
+const texts = ["most feared", "haram income", "richest."];
 const typingSpeed = 100;
 const pauseDuration = 1000;
 let currentIndex = 0;
