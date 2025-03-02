@@ -41,8 +41,8 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     background-color: #000;
+    /* Remove pointer-events: none; */
 }
-
 .overlaybtn {
     background-color: transparent;
     color: #fff;
@@ -102,7 +102,6 @@ body {
     border-radius: 25px;
     background-color: rgba(17, 17, 17, 0.65);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(1px);
     overflow: visible;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
     transition: transform 0.55s ease-out;
@@ -111,6 +110,12 @@ body {
 .main-container:hover {
     transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
 }
+
+* {
+    cursor: url('https://r2.guns.lol/a5b43f72-1522-410f-b3f0-a70cbe891847.png') 16 16, auto;
+}
+
+
 
 
 
@@ -230,7 +235,6 @@ body {
     background-color: rgba(22, 22, 22, 0.178);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 14px;
-    backdrop-filter: blur(3px);
     max-width: 100%;
     overflow-wrap: break-word;
     margin-bottom: 1.5vh;
