@@ -94,23 +94,20 @@ body {
 }
 
 
-/* background image / gif / video setup */
 .main-container {
-    width: 100px;
-    max-width: 100%;
+    width: 275px; /* change to 550px for wide template | 275px for normal template */
+    max-width: 80%;
     padding: 20px;
     border-radius: 25px;
     background-color: rgba(17, 17, 17, 0.65);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
     overflow: visible;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-    transition: transform 0.55s ease-out;
+    perspective: 800px; /* tilt.js */
+    transform-style: preserve-3d; /* tilt.js */
+    transition: transform 0.2s ease-out; /* Move transition here */
+    will-change: transform; /* tilt.js */
 }
-
-.main-container:hover {
-    transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
-}
-
 * {
     cursor: url('https://r2.guns.lol/a5b43f72-1522-410f-b3f0-a70cbe891847.png') 16 16, auto;
 }
@@ -181,12 +178,16 @@ body {
 .badges-container {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    align-items: center;
+    cursor: default;
+    position: relative;
+    gap: 15px;
     background-color: #00000070;
     border-radius: 50px;
     padding: 14px 30px;
     margin-bottom: 2vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: default;
     position: relative;
 }
 
